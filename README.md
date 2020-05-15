@@ -1,1 +1,1 @@
-TestJNI
+Android NDK (JNI) + CAN BUS
