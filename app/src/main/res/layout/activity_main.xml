@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/left_fill" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/right_fill" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal">
+
+            <ru.test.testjni.speedviews.SpeedView
+                android:id="@+id/speedView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:sv_markColor="@android:color/transparent"
+                app:sv_maxSpeed="150"
+                app:sv_speedTextFormat="INTEGER"
+                app:sv_textSize="18sp"
+                app:sv_tickNumber="16"
+                app:sv_unit="км/ч"
+                app:sv_unitSpeedInterval="5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28.03.2018"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:05"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 &#8451;"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <ru.test.testjni.speedviews.SpeedView
+                android:id="@+id/tachometerView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:sv_markColor="@android:color/transparent"
+                app:sv_maxSpeed="6000"
+                app:sv_speedTextFormat="INTEGER"
+                app:sv_textSize="18sp"
+                app:sv_tickNumber="7"
+                app:sv_unit=" rpm"
+                app:sv_unitSpeedInterval="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ru.test.testjni.speedviews.SpeedView
+                android:id="@+id/fuelView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                app:sv_highSpeedColor="#FF00FF00"
+                app:sv_indicatorWidth="5dp"
+                app:sv_lowSpeedColor="#FFFF0000"
+                app:sv_lowSpeedPercent="15"
+                app:sv_markColor="@android:color/transparent"
+                app:sv_maxSpeed="150"
+                app:sv_mediumSpeedColor="#FFFFFF00"
+                app:sv_mediumSpeedPercent="40"
+                app:sv_speedTextFormat="INTEGER"
+                app:sv_speedometerMode="TOP"
+                app:sv_speedometerWidth="5dp"
+                app:sv_unit="%"
+                app:sv_unitSpeedInterval="5dp"
+                app:sv_unitTextSize="10sp" />
+
+            <ru.test.testjni.speedviews.SpeedView
+                android:id="@+id/temperatureView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                app:sv_indicatorWidth="5dp"
+                app:sv_markColor="@android:color/transparent"
+                app:sv_maxSpeed="125"
+                app:sv_speedTextFormat="INTEGER"
+                app:sv_speedometerMode="TOP"
+                app:sv_speedometerWidth="5dp"
+                app:sv_unit=" &#8451;"
+                app:sv_unitSpeedInterval="5dp"
+                app:sv_unitTextSize="10sp" />
+        </LinearLayout>
+
+
+        <GridLayout
+            android:id="@+id/ph0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:clipChildren="false"
+            android:columnCount="8"
+            android:rowCount="1">
+
+            <ImageView
+                android:id="@+id/parking_brake"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:src="@drawable/parking_brake2" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:src="@drawable/fuel3" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:src="@drawable/brake_system_warning2" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:src="@drawable/car_oil2" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:src="@drawable/voltage2" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="center"
+                android:src="@drawable/engine_temperature" />
+
+            <ImageView
+                android:id="@+id/ph06"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/ph07"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/ph08"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1" />
+
+            <ImageView
+                android:id="@+id/ph09"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_rowWeight="1" />
+
+        </GridLayout>
+    </LinearLayout>
+</FrameLayout>
