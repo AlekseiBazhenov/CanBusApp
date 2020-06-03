@@ -1,6 +1,6 @@
-The prototype of vehicle dashboard to inform driver about speed, RPM and other params.
+The prototype of vehicle dashboard to inform the driver about speed, RPM and other params.
 
-Solution was tested on a Danfoss controller connected to an industrial embedded computer IOVU-12F.
+Solution was tested on the industrial computer IOVU-12F connected to the Danfoss controller .
 
 Technologies were used:
 - Android NDK (JNI)
